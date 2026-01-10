@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt stranica s formom i Google mapom.">
+  <meta name="keywords" content="kontakt, forma, mapa">
+  <meta name="author" content="Bozo Loncar">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact - HTML5 Projekt</title>
+</head>
+<body>
+<header>
+  <div class="hero-image"></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Contact</h1>
+
+  <!-- Google mapa (promijeni lokaciju po želji) -->
+  <h2>Lokacija</h2>
+  <iframe
+    title="Google mapa"
+    src="https://www.google.com/maps?q=Zagreb&output=embed"
+    width="100%"
+    height="320"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <h2>Kontakt obrazac</h2>
+  <form action="#" method="post">
+    <div class="form-inline">
+      <div class="form-row">
+        <label for="fname">Ime *</label>
+        <input id="fname" name="fname" type="text" required>
+      </div>
+      <div class="form-row">
+        <label for="lname">Prezime *</label>
+        <input id="lname" name="lname" type="text" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="email">E-mail *</label>
+      <input id="email" name="email" type="email" required>
+    </div>
+
+    <div class="form-row">
+      <label for="country">Država</label>
+      <select id="country" name="country">
+        <option value="">Odaberi...</option>
+        <option value="hr">Hrvatska</option>
+        <option value="si">Slovenija</option>
+        <option value="ba">BiH</option>
+        <option value="rs">Srbija</option>
+        <option value="other">Ostalo</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label>
+        <input type="checkbox" name="newsletter" value="yes">
+        Želim primati newsletter
+      </label>
+    </div>
+
+    <div class="form-row">
+      <label for="message">Poruka</label>
+      <textarea id="message" name="message" placeholder="Upiši poruku..."></textarea>
+    </div>
+
+    <button type="submit">Pošalji</button>
+  </form>
+</main>
+
+<footer>
+  <p>Copyright &copy; 2026 Tvoje Ime</p>
+  <a class="github" href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener">
+    <img src="img/github-mark.png" alt="GitHub">
+    <span>GitHub repo</span>
+  </a>
+</footer>
+</body>
+</html>
